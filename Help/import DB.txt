@@ -1,0 +1,115 @@
+****************************************************************************************************
+		How to import asc.dmp into Database
+****************************************************************************************************
+OPEN command prompt..
+c:\>sqlplus system/manager
+
+
+SQL>show user;
+USER is "SYSTEM"
+
+drop user if exists,
+
+SQL> drop user asc1 cascade;
+User dropped.
+
+SQL>create user asc1 identified by asc1;
+
+SQL>grant dba to minglespot;
+
+SQL>conn asc1/asc1
+USER is "EZEST"
+
+SQL>select * from tab;
+no rows selected.
+
+to import the 'asc.dmp' file into 'asc1' user,
+
+Open command prompt
+
+C:\>imp
+
+[then shows some message and ask username and password]
+Import: Release 10.2.0.1.0 - Production on Sat Nov 8 10:18:23 2008
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Username:asc1
+Password:asc1
+
+Connected to: Oracle Database 10g Express Edition Release 10.2.0.1.0 - Production
+
+Import file: EXPDAT.DMP > D:\asc.dmp (Specify full path exactly, where  the dump file is located) then press enter
+
+
+Enter insert buffer size (minimum is 8192) 30720>press enter
+
+Export file created by EXPORT:V10.02.01 via conventional path
+import done in WE8MSWIN1252 character set and AL16UTF16 NCHAR character set
+import server uses AL32UTF8 character set (possible charset conversion)
+
+List contents of import file only (yes/no): no >press enter
+
+Ignore create error due to object existence (yes/no): no > press enter
+
+Import grants (yes/no): yes > press enter
+
+Import table data (yes/no): yes > press enter
+
+Import entire export file (yes/no): no > yes press enter
+
+
+then following statements will be displayed
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+. importing EZEST's objects into EZEST
+. . importing table                "ACCOMMODATION"          6 rows imported
+. . importing table                 "BOOKINGSINFO"          8 rows imported
+. . importing table                     "FEEDBACK"          5 rows imported
+. . importing table                      "INVITES"          8 rows imported
+. . importing table                        "LOGIN"         10 rows imported
+. . importing table                  "RESORTSINFO"          6 rows imported
+. . importing table                    "ROOMSINFO"         10 rows imported
+. . importing table                  "USERPROFILE"          8 rows imported
+Import terminated successfully without warnings.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+D:\>exit press enter
+
+SQL>conn asc1/asc1
+
+SQL>select * from tab;
+
+
+TNAME                          TABTYPE  CLUSTERID
+------------------------------ ------- ----------
+ACCOMMODATION                  TABLE
+BOOKINGSINFO                   TABLE
+INVITES                        TABLE
+LOGIN                          TABLE
+RESORTSINFO                    TABLE
+ROOMSINFO                      TABLE
+USERPROFILE                    TABLE
+FEEDBACK                       TABLE
+
+8 rows selected.
+
+SQL>exit
+****************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+****************************************************************************************************
+		How to create DSN (Data Source Name)
+****************************************************************************************************
+
+Click on Start Menu--> Settings--> Control Panel--> Performance and Maintenance--> Administrative Tools--> Data Sources(ODBC).
+
+Then 'ODBC Data Source Administrator' Window will be opened,then select 'User DSN'(default).
+In this window click on 'Add' button, then 'Create New Data Source' window will be opened. In the list select 'Oracle in XE' then click on 'Finish' button.
+
+Then 'Oracle ODBC Driver Configuration' window will be opened, in this enter
+
+Data Source Name  :ascdsn
+Description       :
+TNS Service Name  :XE
+USer ID           :asc1
+
+Then click on button called 'Test Connection'.
+
+Then one more window will be opened called 'Oracle ODBC Driver Connect', in this enter 'password' as 'asc1' and click on 'OK' Button. then connection successfull message will be displayed in an alert box click on 'OK' button in that.
+
+[In some cases Unable to connect ...... some message will be displayed with red colored crossmark. it means that DSN creation Failed. try one more time until you get connection successfully, then go to your project]
+
+Then click on 'OK' button in 'Oracle ODBC Driver Configuration' window. and click on 'OK' button in 'ODBC Data Source Administrator' window.
+
+DSN Creation is Over.
+
+
+****************************************************************************************************
+				Best of Luck
+****************************************************************************************************

@@ -1,0 +1,13 @@
+****************************************************************************************************
+				Connection Pooling in Tomcat 6.0
+****************************************************************************************************
+
+If you are using connection pool in Tomcat6.0 then make the changes in Tomcat as shown below.
+
+-->Open 'context.xml' file, which is located in 'D:\Program Files\Tomcat 6.0\conf' directory. copy the <Resource ...../> tag and paste it into context.xml with in <Context> and </Context> tags.
+
+<Resource name="jdbc/ascDB" auth= "Container"  type="javax.sql.DataSource" maxActive="100" maxIdle="30" maxWait="10000" username="asc1" password="asc1" driverClassName="oracle.jdbc.driver.OracleDriver" url="jdbc:oracle:thin:@localhost:1521:xe"/>
+
+****************************************************************************************************
+					All the Best
+****************************************************************************************************

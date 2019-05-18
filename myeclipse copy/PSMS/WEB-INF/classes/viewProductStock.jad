@@ -1,0 +1,71 @@
+// Decompiled by DJ v3.5.5.77 Copyright 2003 Atanas Neshkov  Date: 10/7/2008 10:09:39 AM
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   viewProductStock.java
+
+import java.io.*;
+import java.sql.Connection;
+import java.util.Vector;
+import javax.servlet.ServletException;
+import javax.servlet.http.*;
+import webman.ProductStock;
+
+public class viewProductStock extends HttpServlet
+{
+
+    public viewProductStock()
+    {
+        con = null;
+        hs = null;
+        PRS = new ProductStock();
+        v = new Vector();
+    }
+
+    public void doPost(HttpServletRequest req, HttpServletResponse res)
+        throws IOException, ServletException
+    {
+        try
+        {
+            System.out.println("NOW WE ARE IN VIEW PRODUCT STOCK AND DOPOST METHOD");
+            res.setContentType("text/html");
+            hs = req.getSession(true);
+            PrintWriter pw = res.getWriter();
+            did = req.getParameter("did");
+            prid = req.getParameter("prid");
+            if(!did.equals(""))
+            {
+                v = PRS.ShowProductStock(did, prid);
+                if(v.size() > 0)
+                {
+                    pw.println("<html><head><TITLE>Web-Enabled Automated Manufacturing System</TITLE>");
+                    pw.println("</head><P align=center><FONT color=deepskyblue size=4><STRONG>PRODUCTSTOCK INFORMATION</STRONG></FONT></P> ");
+                    pw.println("<body><br><br>");
+                    pw.println("<center><TABLE border=0 cellPadding=1 cellSpacing=1 width='75%' style='HEIGHT: 147px; WIDTH: 248px'>");
+                    pw.println((new StringBuilder("<TR><TD>DealerID</TD><TD>")).append((String)v.elementAt(0)).append("</TD></TR>").toString());
+                    pw.println((new StringBuilder("<TR><TD>ProductID</TD><TD>")).append((String)v.elementAt(1)).append("</TD></TR><TR><TD>Quantity</TD>").toString());
+                    pw.println((new StringBuilder("<TD>")).append((String)v.elementAt(2)).append("</TD></TR><TR><TD>ReOrderLevel</TD><TD>").toString());
+                    pw.println((String)v.elementAt(3));
+                    pw.println("</TD></TR>");
+                    pw.println("<TR><TD ALIGN=CENTER><A HREF='./getproductstock'>continue</a></table></center></body></html>");
+                    pw.flush();
+                    pw.close();
+                } else
+                {
+                    pw.println("<html><head><TITLE>Web-Enabled Automated Manufacturing System</TITLE></script></head><P align=center><FONT color=deepskyblue size=4><STRONG>VIEW&nbsp;PRODUCT </STRONG></FONT></P> ");
+                    pw.println("<center><strong><b><font color=red>The Products are not there with respect to the dealer</font></b></strong>");
+                    pw.println("</center></form></body></html>");
+                    pw.flush();
+                    pw.close();
+                }
+            }
+        }
+        catch(Exception exception) { }
+    }
+
+    Connection con;
+    HttpSession hs;
+    String did;
+    String prid;
+    ProductStock PRS;
+    Vector v;
+}

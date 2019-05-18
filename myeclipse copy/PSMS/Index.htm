@@ -1,0 +1,72 @@
+<HTML>
+<HEAD>
+<TITLE>Products ans Services Management System :Logon</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+function log()
+ {
+   var usr1=document.login.uid.value.length
+   var pwd1=document.login.pwd.value.length
+   var usr=document.login.uid.value
+   var pwd=document.login.pwd.value
+    if(usr.length==0)
+	 {
+        alert("Enter username");
+	 	document.login.uid.focus();
+	 	return false
+	}
+	else if(pwd.length==0)
+      {
+        alert("Enter password");
+		document.login.pwd.focus();
+		return false
+	  }
+
+  return true
+ }
+
+  </SCRIPT>
+</HEAD>
+<BODY bgcolor="">
+<marquee BGCOLOR="#CC99FF"><FONT COLOR="#660099"><B>PRODUCT AND SERVICES MANAGEMENT SYSTEM</b></marquee>
+
+<P align=center><FONT color=deepskyblue
+ size=5><STRONG>Products And Services Management  System</STRONG></FONT></p>
+<font><strong>
+</FONT></STRONG>
+<FORM action="./CheckUser" method=post name=login onsubmit="return log()">
+ <table> 
+  <TR>
+    <TD>UserName</TD>
+    <td><input type=text name=uid></td>
+    <td></td>
+   </tr>
+   <tr>
+   <td>Password</td>
+    <td><input type=password name=pwd></td>
+        <td></td>
+    </tr>
+    <tr>
+    <td>User Type</td>
+    <td>     <select name="utype" size="1" id="type">
+          <option value="Admin">Admin</option>
+          <option value="Dealer">Dealer</option>
+          <option value="Supplier">Supplier</option>
+          <option value="Staff">Staff</option>
+        </select>
+       </td>
+           <td>  <p align=center><INPUT id=submit1 name=submit1 type=submit value=Submit></P>
+        </FORM></TD>
+        <td >
+<pre>               <a href="./aboutus.htm">About Us</a>
+    
+               <a href="productdetails.html">Product Details</a>
+    
+               <a href="Newsletter.html">News Letter</a></pre></td>
+           </td>
+      </tr>
+      </table>
+      <marquee BGCOLOR="#CC99FF"><FONT COLOR="#660099"><B>PRODUCT AND SERVICES MANAGEMENT SYSTEM</b></marquee>
+</BODY>
+
+</HTML>

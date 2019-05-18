@@ -1,0 +1,82 @@
+****************************************************************************************************
+				How to export  Oracle Database
+****************************************************************************************************
+Open commamd prompt, then type 'exp' and then press enter 
+enter username,password as
+Username:asc1
+Password:asc1
+Connected to: Oracle Database 10g Express Edition Release 10.2.0.1.0 - Production
+
+Enter array fetch buffer size: 4096 >  just press enter
+
+Export file: EXPDAT.DMP > d:\asc.dmp (Give some path to which file u want to export? ) press enter
+
+(1)E(ntire database), (2)U(sers), or (3)T(ables): (2)U > press enter
+
+Export grants (yes/no): yes > press enter
+
+Export table data (yes/no): yes > press enter
+
+
+Compress extents (yes/no): yes > no press enter
+
+Export done in WE8MSWIN1252 character set and AL16UTF16 NCHAR character set
+server uses AL32UTF8 character set (possible charset conversion)
+
+About to export specified users ...
+User to be exported: (RETURN to quit) >asc1 press enter
+
+User to be exported: (RETURN to quit) >press enter
+
+
+then some statements will appear like below the will be closed automatically export is done.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Export done in WE8MSWIN1252 character set and AL16UTF16 NCHAR character set
+server uses AL32UTF8 character set (possible charset conversion)
+. exporting pre-schema procedural objects and actions
+. exporting foreign function library names for user ASC1
+. exporting PUBLIC type synonyms
+. exporting private type synonyms
+. exporting object type definitions for user ASC1
+About to export ASC1's objects ...
+. exporting database links
+. exporting sequence numbers
+. exporting cluster definitions
+. about to export ASC1's tables via Conventional Path ...
+. . exporting table                  ACCOMMODATION          6 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                   BOOKINGSINFO          8 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                       FEEDBACK          5 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                        INVITES          8 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                          LOGIN         10 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                    RESORTSINFO          6 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                      ROOMSINFO         10 rows exported
+EXP-00091: Exporting questionable statistics.
+. . exporting table                    USERPROFILE          8 rows exported
+EXP-00091: Exporting questionable statistics.
+. exporting synonyms
+. exporting views
+. exporting stored procedures
+. exporting operators
+. exporting referential integrity constraints
+. exporting triggers
+. exporting indextypes
+. exporting bitmap, functional and extensible indexes
+. exporting posttables actions
+. exporting materialized views
+. exporting snapshot logs
+. exporting job queues
+. exporting refresh groups and children
+. exporting dimensions
+. exporting post-schema procedural objects and actions
+. exporting statistics
+Export terminated successfully without warnings.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+The exported file name is 'asc1.dmp' it will be available in D:\ (D drive).

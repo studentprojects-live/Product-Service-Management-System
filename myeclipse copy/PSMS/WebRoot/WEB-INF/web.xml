@@ -1,0 +1,2073 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app>
+
+<servlet>
+	<servlet-name>CheckUser</servlet-name>
+	<servlet-class>CheckUser</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>logout</servlet-name>
+	<servlet-class>Logout</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>addproduct</servlet-name>
+	<servlet-class>addProduct</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>addprds</servlet-name>
+	<servlet-class>addPrds</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>addproductstock</servlet-name>
+	<servlet-class>addProductStock</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>modifyproduct</servlet-name>
+	<servlet-class>modifyProduct</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>showproduct</servlet-name>
+	<servlet-class>showProduct</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>updateproduct</servlet-name>
+	<servlet-class>UpdateProduct</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>deleteproduct</servlet-name>
+	<servlet-class>deleteProduct</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>showproduct1</servlet-name>
+	<servlet-class>showProduct1</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>delproduct</servlet-name>
+	<servlet-class>DelProduct</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>getproduct</servlet-name>
+	<servlet-class>getProduct</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>viewproduct</servlet-name>
+	<servlet-class>viewProduct</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>viewall</servlet-name>
+	<servlet-class>viewAll</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>addpart</servlet-name>
+	<servlet-class>addPart</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>modifypart</servlet-name>
+	<servlet-class>modifyPart</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>showpart</servlet-name>
+	<servlet-class>showPart</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>updatepart</servlet-name>
+	<servlet-class>UpdatePart</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>deletepart</servlet-name>
+	<servlet-class>deletePart</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>showpart1</servlet-name>
+	<servlet-class>showPart1</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>delpart</servlet-name>
+	<servlet-class>DelPart</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>getpart</servlet-name>
+	<servlet-class>getPart</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>viewpart</servlet-name>
+	<servlet-class>viewPart</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>adddealer</servlet-name>
+	<servlet-class>addDealer</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>modifydealer</servlet-name>
+	<servlet-class>modifyDealer</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>showdealer</servlet-name>
+	<servlet-class>showDealer</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>updatedealer</servlet-name>
+	<servlet-class>UpdateDealer</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>deletedealer</servlet-name>
+	<servlet-class>deleteDealer</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>showdealer1</servlet-name>
+	<servlet-class>showDealer1</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>deldealer</servlet-name>
+	<servlet-class>DelDealer</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>getdealer</servlet-name>
+	<servlet-class>getDealer</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>viewdealer</servlet-name>
+	<servlet-class>viewDealer</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>addsuppliers</servlet-name>
+	<servlet-class>addSuppliers</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>modifysuppliers</servlet-name>
+	<servlet-class>modifySuppliers</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>showsuppliers</servlet-name>
+	<servlet-class>showSuppliers</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>updatesuppliers</servlet-name>
+	<servlet-class>UpdateSuppliers</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>deletesuppliers</servlet-name>
+	<servlet-class>deleteSuppliers</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>showsuppliers1</servlet-name>
+	<servlet-class>showSuppliers1</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>delsuppliers</servlet-name>
+	<servlet-class>DelSuppliers</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>getsuppliers</servlet-name>
+	<servlet-class>getSuppliers</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>viewsuppliers</servlet-name>
+	<servlet-class>viewSuppliers</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>adduser</servlet-name>
+	<servlet-class>addUser</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>modifyuser</servlet-name>
+	<servlet-class>modifyUser</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>showuser</servlet-name>
+	<servlet-class>showUser</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>updateuser</servlet-name>
+	<servlet-class>UpdateUser</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>deleteuser</servlet-name>
+	<servlet-class>deleteUser</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>showuser1</servlet-name>
+	<servlet-class>showUser1</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>deluser</servlet-name>
+	<servlet-class>DelUser</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>getuser</servlet-name>
+	<servlet-class>getUser</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>viewuser</servlet-name>
+	<servlet-class>viewUser</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>modifyproductstock</servlet-name>
+	<servlet-class>modifyProductStock</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>showproductstock</servlet-name>
+	<servlet-class>showProductStock</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>updateproductstock</servlet-name>
+	<servlet-class>UpdateProductStock</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>deleteproductstock</servlet-name>
+	<servlet-class>deleteProductStock</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>showproductstock1</servlet-name>
+	<servlet-class>showProductStock1</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>delproductstock</servlet-name>
+	<servlet-class>DelProductStock</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>getproductstock</servlet-name>
+	<servlet-class>getProductStock</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>viewproductstock</servlet-name>
+	<servlet-class>viewProductStock</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>addbofm</servlet-name>
+	<servlet-class>addBOFM</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>addbom</servlet-name>
+	<servlet-class>addBOM</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>modifybom</servlet-name>
+	<servlet-class>modifyBOM</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>showbom</servlet-name>
+	<servlet-class>showBOM</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>updatebom</servlet-name>
+	<servlet-class>UpdateBOM</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>deletebom</servlet-name>
+	<servlet-class>deleteBOM</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>showbom1</servlet-name>
+	<servlet-class>showBOM1</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>delbom</servlet-name>
+	<servlet-class>DelBOM</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>getbom</servlet-name>
+	<servlet-class>getBOM</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>viewbom</servlet-name>
+	<servlet-class>viewBOM</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>productionschedule</servlet-name>
+	<servlet-class>ProductionSchedule</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>partsindent</servlet-name>
+	<servlet-class>PartsIndent</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>partsindent1</servlet-name>
+	<servlet-class>PartsIndent1</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>requestquotations</servlet-name>
+	<servlet-class>RequestQuotations</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>updatepassword</servlet-name>
+	<servlet-class>UpdatePassword</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>entersales</servlet-name>
+	<servlet-class>EnterSales</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>entersalesdb</servlet-name>
+	<servlet-class>EnterSalesDB</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>submitorder</servlet-name>
+	<servlet-class>SubmitOrder</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>submitorderdb</servlet-name>
+	<servlet-class>SubmitOrderDB</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>submitquotation</servlet-name>
+	<servlet-class>SubmitQuotation</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+
+<servlet>
+	<servlet-name>submitquotationdb</servlet-name>
+	<servlet-class>SubmitQuotationDB</servlet-class>
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>webman</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>pass</param-name>
+			<param-value>webman</param-value>
+		</init-param>
+</servlet>
+  <servlet>
+    <servlet-name>Suppliers</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>webman.Suppliers</servlet-class>
+  </servlet>
+
+
+<servlet-mapping>
+	<servlet-name>CheckUser</servlet-name>
+	<url-pattern>/CheckUser</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>logout</servlet-name>
+	<url-pattern>/logout</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>addproduct</servlet-name>
+	<url-pattern>/addproduct</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>addprds</servlet-name>
+	<url-pattern>/addprds</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>addproductstock</servlet-name>
+	<url-pattern>/addproductstock</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>modifyproduct</servlet-name>
+	<url-pattern>/modifyproduct</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>showproduct</servlet-name>
+	<url-pattern>/showproduct</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>updateproduct</servlet-name>
+	<url-pattern>/updateproduct</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>deleteproduct</servlet-name>
+	<url-pattern>/deleteproduct</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>showproduct1</servlet-name>
+	<url-pattern>/showproduct1</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>delproduct</servlet-name>
+	<url-pattern>/delproduct</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>getproduct</servlet-name>
+	<url-pattern>/getproduct</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>viewproduct</servlet-name>
+	<url-pattern>/viewproduct</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>viewall</servlet-name>
+	<url-pattern>/viewall</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>addpart</servlet-name>
+	<url-pattern>/addpart</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>modifypart</servlet-name>
+	<url-pattern>/modifypart</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>showpart</servlet-name>
+	<url-pattern>/showpart</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>updatepart</servlet-name>
+	<url-pattern>/updatepart</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>deletepart</servlet-name>
+	<url-pattern>/deletepart</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>showpart1</servlet-name>
+	<url-pattern>/showpart1</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>delpart</servlet-name>
+	<url-pattern>/delpart</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>getpart</servlet-name>
+	<url-pattern>/getpart</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>viewpart</servlet-name>
+	<url-pattern>/viewpart</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>adddealer</servlet-name>
+	<url-pattern>/adddealer</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>modifydealer</servlet-name>
+	<url-pattern>/modifydealer</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>showdealer</servlet-name>
+	<url-pattern>/showdealer</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>updatedealer</servlet-name>
+	<url-pattern>/updatedealer</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>deletedealer</servlet-name>
+	<url-pattern>/deletedealer</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>showdealer1</servlet-name>
+	<url-pattern>/showdealer1</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>deldealer</servlet-name>
+	<url-pattern>/deldealer</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>getdealer</servlet-name>
+	<url-pattern>/getdealer</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>viewdealer</servlet-name>
+	<url-pattern>/viewdealer</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>addsuppliers</servlet-name>
+	<url-pattern>/addsuppliers</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>modifysuppliers</servlet-name>
+	<url-pattern>/modifysuppliers</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>showsuppliers</servlet-name>
+	<url-pattern>/showsuppliers</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>updatesuppliers</servlet-name>
+	<url-pattern>/updatesuppliers</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>deletesuppliers</servlet-name>
+	<url-pattern>/deletesuppliers</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>showsuppliers1</servlet-name>
+	<url-pattern>/showsuppliers1</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>delsuppliers</servlet-name>
+	<url-pattern>/delsuppliers</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>getsuppliers</servlet-name>
+	<url-pattern>/getsuppliers</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>viewsuppliers</servlet-name>
+	<url-pattern>/viewsuppliers</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>adduser</servlet-name>
+	<url-pattern>/adduser</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>modifyuser</servlet-name>
+	<url-pattern>/modifyuser</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>showuser</servlet-name>
+	<url-pattern>/showuser</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>updateuser</servlet-name>
+	<url-pattern>/updateuser</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>deleteuser</servlet-name>
+	<url-pattern>/deleteuser</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>showuser1</servlet-name>
+	<url-pattern>/showuser1</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>deluser</servlet-name>
+	<url-pattern>/deluser</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>getuser</servlet-name>
+	<url-pattern>/getuser</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>viewuser</servlet-name>
+	<url-pattern>/viewuser</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>modifyproductstock</servlet-name>
+	<url-pattern>/modifyproductstock</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>showproductstock</servlet-name>
+	<url-pattern>/showproductstock</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>updateproductstock</servlet-name>
+	<url-pattern>/updateproductstock</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>deleteproductstock</servlet-name>
+	<url-pattern>/deleteproductstock</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>showproductstock1</servlet-name>
+	<url-pattern>/showproductstock1</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>delproductstock</servlet-name>
+	<url-pattern>/delproductstock</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>getproductstock</servlet-name>
+	<url-pattern>/getproductstock</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>viewproductstock</servlet-name>
+	<url-pattern>/viewproductstock</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>addbofm</servlet-name>
+	<url-pattern>/addbofm</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>addbom</servlet-name>
+	<url-pattern>/addbom</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>modifybom</servlet-name>
+	<url-pattern>/modifybom</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>showbom</servlet-name>
+	<url-pattern>/showbom</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>updatebom</servlet-name>
+	<url-pattern>/updatebom</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>deletebom</servlet-name>
+	<url-pattern>/deletebom</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>showbom1</servlet-name>
+	<url-pattern>/showbom1</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>delbom</servlet-name>
+	<url-pattern>/delbom</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>getbom</servlet-name>
+	<url-pattern>/getbom</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>viewbom</servlet-name>
+	<url-pattern>/viewbom</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>productionschedule</servlet-name>
+	<url-pattern>/productionschedule</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>partsindent</servlet-name>
+	<url-pattern>/partsindent</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>requestquotations</servlet-name>
+	<url-pattern>/requestquotations</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>partsindent1</servlet-name>
+	<url-pattern>/partsindent1</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>updatepassword</servlet-name>
+	<url-pattern>/updatepassword</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>entersales</servlet-name>
+	<url-pattern>/entersales</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>entersalesdb</servlet-name>
+	<url-pattern>/entersalesdb</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>submitorder</servlet-name>
+	<url-pattern>/submitorder</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>submitorderdb</servlet-name>
+	<url-pattern>/submitorderdb</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>submitquotation</servlet-name>
+	<url-pattern>/submitquotation</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>submitquotationdb</servlet-name>
+	<url-pattern>/submitquotationdb</url-pattern>
+</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Suppliers</servlet-name>
+    <url-pattern>/Suppliers</url-pattern>
+  </servlet-mapping>
+
+<welcome-file-list>
+<welcome-file>Index.htm</welcome-file>
+</welcome-file-list>
+</web-app>

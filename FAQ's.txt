@@ -1,0 +1,57 @@
+1.   What is the main aim or purpose of this application?
+A :     Refer the Abstract in your documentation
+
+2.  Why you have developed this application in java language?
+A :     Since java is platform independent
+
+3.   .Net is also platform independent .Why you have chosen java language?
+A :  .Net is platform independent according to theory only till now.
+
+    .Net perfect practical implementations are not existing on the                platforms  like linux ,unix etc.
+
+4.  How many types of users are there in this system ?
+A :  Refer the document
+
+5.   What are the activities of each user ?
+A : Refer yesterday's notes/documents for activities of each user.
+
+6. How many modules are there in this project?
+A : Refer documentation.
+
+7.  What tachnologies you have used to develop the frontend part in your project?
+
+A: HTML,Servlets & jsp.
+
+8.  Which web server you have used to deploy this web aplication ?
+
+A : Apache tomcat 6.0.
+
+9.   What is the difference  between webserver and an application server ?
+
+A : Any server which can understand the Http request and can send the http         response is nothing but a webserver. Apart from this application server       provides a facility to genarate the code automatically for security       management  & database transaction management etc.
+
+10. Which data base you have used  in this project ?
+A : Oracle 10g (XE)
+
+11. Why you have chosen this database server ?
+A : Since Oracle is more Secure database server.And it is world best Transactional server.
+
+12. How many tables are there in your project ?
+A : Refer data dictionary in your document.
+
+13. How many normal forms you have applied on the tables ?
+A: First two normal forms.
+
+       In the first normal forms we have divided the total data into different tables 
+       to reduce the redundancy.
+
+        In the second normal form we have specified primary keys, foreign keys and other  constraints.
+
+14.  Which database driver you have used to interact with Oracle database ?
+A :  Thin driver for Oracle.
+
+15.  What is your role in this project ?
+A :  I have involved in coding,unit Testing & Integration Testing.
+
+
+
