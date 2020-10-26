@@ -46,4 +46,4 @@ in address box enter :http://ipaddress:8080/docs/Index.htm
 in address box enter :http://systemname:8080/docs/Index.htm]
 
 For more information visit:
-https://www.studentprojectguide.com/java-projects/product-service-management-system/
+https://www.studentprojects.live/studentprojectreport/projectreport/product-service-management-system/
